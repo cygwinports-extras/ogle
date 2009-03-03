@@ -1,0 +1,55 @@
+--- origsrc/ogle-0.9.2/ac3/Makefile.am	2003-10-13 20:05:15.000000000 -0500
++++ src/ogle-0.9.2/ac3/Makefile.am	2009-02-09 22:50:06.312500000 -0600
+@@ -17,7 +17,7 @@
+ 
+ pkglib_PROGRAMS = ogle_ac3_p ogle_audio
+ 
+-AM_CPPFLAGS = @TOP_INCLUDES@ @A52_CPPFLAGS@ @MAD_CPPFLAGS@ @XML_CFLAGS@
++AM_CPPFLAGS = @TOP_INCLUDES@ @A52_CPPFLAGS@ @MAD_CPPFLAGS@ @XML_CPPFLAGS@
+ 
+ AM_CFLAGS = @O_CFLAGS@
+ 
+--- origsrc/ogle-0.9.2/dvd_cli/Makefile.am	2003-10-13 20:05:15.000000000 -0500
++++ src/ogle-0.9.2/dvd_cli/Makefile.am	2009-02-09 22:50:15.187500000 -0600
+@@ -17,7 +17,7 @@
+ 
+ pkglib_PROGRAMS = ogle_cli
+ 
+-AM_CPPFLAGS = @TOP_INCLUDES@ @X_CFLAGS@ @XML_CFLAGS@
++AM_CPPFLAGS = @TOP_INCLUDES@ @X_CFLAGS@ @XML_CPPFLAGS@
+ AM_CFLAGS = @O_CFLAGS@
+ 
+ ogle_cli_SOURCES = main.c \
+--- origsrc/ogle-0.9.2/mpeg2_video/Makefile.am	2003-10-13 20:05:15.000000000 -0500
++++ src/ogle-0.9.2/mpeg2_video/Makefile.am	2009-02-09 22:50:24.890625000 -0600
+@@ -43,7 +43,7 @@ EXTRA_DIST = \
+ 
+ pkglib_PROGRAMS = ogle_mpeg_vs ogle_vout
+ 
+-AM_CPPFLAGS = @TOP_INCLUDES@ @X_CFLAGS@ @MLIB_CPPFLAGS@ @JPEG_CPPFLAGS@ @XML_CFLAGS@
++AM_CPPFLAGS = @TOP_INCLUDES@ @X_CFLAGS@ @MLIB_CPPFLAGS@ @JPEG_CPPFLAGS@ @XML_CPPFLAGS@
+ AM_CFLAGS = @O_CFLAGS@
+ 
+ ogle_mpeg_vs_SOURCES = \
+--- origsrc/ogle-0.9.2/ogle/Makefile.am	2009-02-09 22:12:08.328125000 -0600
++++ src/ogle-0.9.2/ogle/Makefile.am	2009-02-09 22:50:30.593750000 -0600
+@@ -19,7 +19,7 @@ pkglib_LTLIBRARIES = libmsgevents.la lib
+ pkginclude_HEADERS = dvd.h dvdcontrol.h msgevents.h dvdevents.h dvdbookmarks.h
+ 
+ 
+-AM_CPPFLAGS = @TOP_INCLUDES@ @XML_CFLAGS@
++AM_CPPFLAGS = @TOP_INCLUDES@ @XML_CPPFLAGS@
+ AM_CFLAGS = @O_CFLAGS@
+ 
+ libmsgevents_la_SOURCES = msgevents.c
+--- origsrc/ogle-0.9.2/vmg/Makefile.am	2003-10-14 11:58:13.000000000 -0500
++++ src/ogle-0.9.2/vmg/Makefile.am	2009-02-09 22:50:36.421875000 -0600
+@@ -19,7 +19,7 @@ pkglib_PROGRAMS = ogle_nav
+ bin_PROGRAMS = ifo_dump
+ noinst_PROGRAMS =  vmg_dump dump
+ 
+-AM_CPPFLAGS = @TOP_INCLUDES@ @DVDREAD_CPPFLAGS@ @XML_CFLAGS@
++AM_CPPFLAGS = @TOP_INCLUDES@ @DVDREAD_CPPFLAGS@ @XML_CPPFLAGS@
+  
+ AM_CFLAGS = @O_CFLAGS@
+ 

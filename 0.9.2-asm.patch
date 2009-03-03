@@ -1,0 +1,11 @@
+--- origsrc/ogle-0.9.2/mpeg2_video/yuv2rgb_mmx.c	2003-05-26 16:29:01.000000000 -0500
++++ src/ogle-0.9.2/mpeg2_video/yuv2rgb_mmx.c	2009-02-09 22:53:51.281250000 -0600
+@@ -62,7 +62,7 @@ void __yuv2rgb_mmx_preventwarnings_dontu
+ 	 MMX_grnmask);
+ };
+ 
+-#if defined(__OpenBSD__) && !defined(__ELF__)
++#if (defined(__OpenBSD__) || defined(__CYGWIN__)) && !defined(__ELF__)
+ #define _	"_"
+ #else
+ #define _

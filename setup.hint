@@ -1,0 +1,4 @@
+category: Video
+requires: cygwin a52dec libdvdread3 libjpeg62 libmad libxml2 libX11_6
+sdesc: "DVD player library and command-line interface"
+ldesc: "DVD player library and command-line interface"
