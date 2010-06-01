@@ -22,8 +22,5 @@ src_install() {
 	cd ${B}
 	cyginstall
 
-	mv ${D}/usr/lib/bin/* ${D}/usr/bin/
-	sed -i -e 's|\.\./bin|../../bin|' ${D}/usr/lib/ogle/*.la
-
 	mv ${D}/usr/bin/ifo_dump{,_ogle}.exe
 }
